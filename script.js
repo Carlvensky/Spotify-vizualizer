@@ -14,7 +14,38 @@ document.addEventListener("DOMContentLoaded", () => {
                 createYearChart();
             } else if (button === "Loudest Song") {
                 createLoudestSongChart();
-            }
+            });
         });
+    });
+
+    function createGenreChart() {
+        const genreCounts = {};
+
+        for (const song of songList) { 
+            const genre = song.genre.split(',').map(g => g.trim());
+        }
+    }
+    
+    const labels = Object.keys(genreCounts);
+    const data = Object.values(genreCounts);
+
+    const canvas = document.createElement("canvas");
+    canvas.id = "genreChart";
+    resultCard.innerHTML = "";
+    resultCard.appendChild(canvas);
+
+    const ctx = canvas.getContext("2d");
+
+    new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [{
+                data: data,
+                backgroundColor: "rgba(35, 255, 64, 0.8)",
+                borderColor: "rgba(0, 0, 0)",
+                borderWidth: 1
+            }]
+        }
     }
 });
