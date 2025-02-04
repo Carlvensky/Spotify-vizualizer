@@ -29,7 +29,6 @@ img{
 }
 
 .result-section{
-    background-color: blue;
     padding: 20px;
     margin-bottom: 40px;
     border-radius: 10px;
@@ -51,4 +50,17 @@ img{
     padding: 12px 24px;
     border-radius: 25px;
     border: none;
+}
+
+.result-card{
+    background-color: #282828;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.result-intro-text{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
