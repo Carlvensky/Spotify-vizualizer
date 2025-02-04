@@ -3,6 +3,12 @@ body{
     color: white;
     font-family: 'inter', sans-serif;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
 
 .title{
     color: #1ED760;
@@ -63,4 +69,13 @@ img{
     font-size: 1.1rem;
     font-weight: 300;
     margin-bottom: 10px;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul a:hover{
+    color: #1ED760;
 }
